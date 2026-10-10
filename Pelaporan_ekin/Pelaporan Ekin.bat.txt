@@ -1,0 +1,5 @@
+@echo off
+tasklist | find /i "laragon.exe" >nul || start "" "C:\laragon\laragon.exe" start
+timeout /t 6 /nobreak >nul
+start "" chrome --app=http://localhost/pelaporan-ekin/
+exit
